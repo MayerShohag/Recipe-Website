@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  outline: none;
+}
+.container {
+  background-color: rgb(240, 240, 240);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0;
+  font-size: 0.9rem;
+}
+
+.simple-text {
+  background-image: url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.simple-text-h1 {
+  font-size: 4rem;
+}
+
+#simple-text-p {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.search-box {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#search-box {
+  width: 50%;
+  height: 40px;
+  padding: 0 15px 0 15px;
+  border: 1px solid rgb(160, 160, 160);
+  border-right: none;
+  font-size: 1rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-icon {
+  width: 50px;
+  height: 40px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  background-color: orange;
+}
+
+.latestRecipe {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+hr {
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid gray;
+}
+.recipe-img {
+  width: 100%;
+  height: 300px;
+}
+
+.recipe-item {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recipe {
+  width: 400px;
+  box-shadow: 5px 5px 15px rgb(114, 114, 114);
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+.recipe:hover {
+  transform: scale(1.02);
+}
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.recipe-body {
+  padding: 20px;
+  background-image: linear-gradient(to left, red, orange);
+  border-radius: 0 0 20px 20px;
+  color: white;
+}
+.recipe-body p {
+  margin: 10px 0;
+}
+.detail-btn {
+  text-align: right;
+}
+.view-detail-btn {
+  height: 45px;
+  width: 105px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.view-detail-btn:hover {
+  background-color: darkslateblue;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(30, 30, 30);
+  color: rgb(200, 200, 200);
+  padding: 10px;
+}
+.icons i a {
+  color: rgb(200, 200, 200);
+  transition: all 0.5s;
+}
+.icons i a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    line-height: 30px;
+  }
+  .icons i a {
+    margin: 0 10px;
+  }
+
+  .simple-text-h1 {
+    font-size: 2rem;
+  }
+
+  #simple-text-p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+}
